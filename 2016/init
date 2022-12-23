@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export PATH=$(pwd):$PATH
+export YEAR=$1
+export DAY=$2
+export GA=$3
+export GID=$4
+export SESSION=$5

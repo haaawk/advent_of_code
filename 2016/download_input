@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while : ; do
+    curl "https://adventofcode.com/$YEAR/day/$DAY/input" -H "cookie: _ga=$GA; _gid=$GID; session=$SESSION" > input.txt
+    grep -q '404 Not Found' input.txt || grep -q 'Please don' input.txt || break
+    sleep 30s
+done
